@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwag45dyvraue"]
+
+[ext_resource type="PackedScene" uid="uid://cd2m5cl2mj1qq" path="res://scenes/objects/game_level_obj/grabbable_object.tscn" id="1_rssat"]
+[ext_resource type="Texture2D" uid="uid://nn8c2iu0txxo" path="res://icon.svg" id="2_edw7n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rssat"]
+radius = 157.05095
+
+[node name="mRNA_PACKAGED" instance=ExtResource("1_rssat")]
+object_tag = "A"
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_edw7n")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-2.5, 13)
+
+[node name="CollisionShape2D" parent="GrabArea" index="0"]
+shape = SubResource("CircleShape2D_rssat")

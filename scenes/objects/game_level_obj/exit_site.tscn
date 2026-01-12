@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://didfdvmhv8k7b"]
+
+[ext_resource type="Script" uid="uid://cybnx4wkamjs6" path="res://scripts/objects/game_level/dna.gd" id="1_36ye2"]
+[ext_resource type="Script" uid="uid://cp5c5fijv3tvm" path="res://scripts/objects/game_level/drop_area.gd" id="1_aqe3w"]
+[ext_resource type="Texture2D" uid="uid://nn8c2iu0txxo" path="res://icon.svg" id="2_44vgy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_36ye2"]
+radius = 77.00649
+
+[node name="ExitSite" type="Node2D" node_paths=PackedStringArray("exit_site")]
+script = ExtResource("1_36ye2")
+exit_site = NodePath("ExitDropPlace")
+
+[node name="ExitDropPlace" type="Area2D" parent="."]
+collision_layer = 1024
+collision_mask = 0
+script = ExtResource("1_aqe3w")
+accepted_tag = "A"
+metadata/_custom_type_script = "uid://cp5c5fijv3tvm"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitDropPlace"]
+shape = SubResource("CircleShape2D_36ye2")
+
+[node name="Sprite2D" type="Sprite2D" parent="ExitDropPlace"]
+texture = ExtResource("2_44vgy")
