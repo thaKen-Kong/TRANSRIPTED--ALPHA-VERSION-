@@ -51,7 +51,7 @@ position = Vector2(530, 276)
 
 [node name="player" parent="." instance=ExtResource("2_w138m")]
 position = Vector2(548, 1260)
-speed = 400.0
+speed = 250.0
 
 [node name="Control Guide" parent="." instance=ExtResource("8_badku")]
 position = Vector2(144, 1177)

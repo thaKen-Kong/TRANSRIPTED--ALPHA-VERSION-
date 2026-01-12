@@ -45,7 +45,7 @@ position = Vector2(0, -774)
 
 [node name="player" parent="." instance=ExtResource("2_xhkdj")]
 position = Vector2(-3, 435)
-speed = 500.0
+speed = 300.0
 
 [node name="NucleolusNPC" parent="." node_paths=PackedStringArray("game_level") instance=ExtResource("4_ymp5n")]
 position = Vector2(0, 42)
