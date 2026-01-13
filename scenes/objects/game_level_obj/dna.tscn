@@ -44,10 +44,10 @@ collision_mask = 2
 script = ExtResource("1_hdwnv")
 mRNA_scene = ExtResource("2_yti1p")
 rna_polymerase_scene = ExtResource("2_0aa6f")
-rna_spawn_position = Vector2(584, 441)
 promoter_region_minigame = ExtResource("2_bcsye")
 rna_polymerase_minigame = ExtResource("3_ysat1")
 termination_minigame_scene = ExtResource("5_gaeuq")
+rna_spawn_position = Vector2(584, 441)
 
 [node name="Shadow" type="Sprite2D" parent="."]
 position = Vector2(-56.999996, 124)
